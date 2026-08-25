@@ -80,7 +80,7 @@ web04/
 
 1. Clona o descarga este repositorio en tu equipo local:
    ```bash
-   git clone https://github.com/tu-usuario/ballet-ucb-landing.html.git
+   git clone https://github.com/WebDesignOneU/web04.git
    ```
 2. Abre el archivo `index.html` en cualquier navegador web moderno (Chrome, Edge, Firefox, Safari).
 3. No requiere compiladores, Node.js ni servidor web especial (funciona localmente mediante protocolo `file://` o mediante servidor de desarrollo).
