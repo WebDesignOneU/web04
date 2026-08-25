@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Programación de Obras y Repertorio de la Temporada 2026 del Ballet de la Universidad Católica Boliviana (Ballet UCB).">
+    <meta name="keywords"
+        content="Ballet, UCB, Repertorio, Temporada 2026, Cartelera, Entradas, Teatro Municipal, Giselle, Lago de los Cisnes">
+    <meta name="author" content="Universidad Católica Boliviana 'San Pablo' - Departamento de Cultura">
+    <title>Programación & Repertorio - Ballet UCB</title>
+
+    <!-- FUENTES GOOGLE FONTS (CINZEL & PLUS JAKARTA SANS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- HOJA DE ESTILOS CSS3 & SCRIPT DE INTERACTIVIDAD -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ENLACE DE SALTO DIRECTO PARA NAVEGACIÓN POR TECLADO / LECTORES DE PANTALLA -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- CABECERA PRINCIPAL Y NAVEGACIÓN NATIVAS -->
+    <header role="banner" class="animate-header">
+        <div class="header-top">
+            <div class="header-titles">
+                <h1>Ballet de la Universidad Católica Boliviana "San Pablo"</h1>
+                <p><small>Compromiso, Técnica y Expresión Artística Universitaria | La Paz - Bolivia</small></p>
+            </div>
+            <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Cambiar tema de color">
+                <span id="theme-icon">🌙</span> <span id="theme-text">Modo Oscuro</span>
+            </button>
+        </div>
+
+        <nav aria-label="Navegación principal del sitio">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="repertorio.html" class="active" aria-current="page">Programación & Repertorio</a></li>
+                <li><a href="elenco.html">Elenco Artístico</a></li>
+                <li><a href="glosario.html">Glosario de Danza</a></li>
+                <li><a href="multimedia.html">Galería Multimedia</a></li>
+                <li><a href="audiciones.html">Audiciones & Registro</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="main-content" role="main">
+
+        <!-- SECCIÓN 3: REPERTORIO Y TEMPORADA (TABLA Y ELEMENTOS DE MEDICIÓN HTML5) -->
+        <section id="repertorio" aria-labelledby="repertorio-heading">
+            <h2 id="repertorio-heading">Programación de Obras - Temporada 2026</h2>
+            <p>A continuación se detalla la cartelera de presentaciones para la presente temporada académica y
+                artística:</p>
+
+            <div class="table-responsive">
+                <table>
+                    <caption>Cartelera Oficial de Funciones y Disponibilidad de Entradas</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Obra / Espectáculo</th>
+                            <th scope="col">Escenario / Teatro</th>
+                            <th scope="col">Venta de Entradas</th>
+                            <th scope="col">Ocupación de Sala</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><time datetime="2026-09-15">15 de Septiembre, 2026</time></td>
+                            <td><em>Giselle</em> (Acto II)</td>
+                            <td>Teatro Municipal Alberto Saavedra Pérez</td>
+                            <td>
+                                Vendidas: 350 / 400<br>
+                                <progress value="350" max="400" role="progressbar"
+                                    aria-label="Entradas vendidas para Giselle" aria-valuenow="350" aria-valuemin="0"
+                                    aria-valuemax="400" aria-valuetext="350 de 400 entradas vendidas (87%)">87%</progress>
+                            </td>
+                            <td>
+                                Nivel de Aforo: High<br>
+                                <meter min="0" max="400" value="350" low="100" high="300" optimum="200"
+                                    aria-label="Aforo ocupado para Giselle" aria-valuenow="350" aria-valuemin="0"
+                                    aria-valuemax="400" aria-valuetext="Aforo Alto, 87% ocupado">87%</meter>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2026-10-20">20 de Octubre, 2026</time></td>
+                            <td><em>El Lago de los Cisnes</em> (Suite)</td>
+                            <td>Paraninfo Universitario UCB Campus San Pablo</td>
+                            <td>
+                                Vendidas: 120 / 250<br>
+                                <progress value="120" max="250" role="progressbar"
+                                    aria-label="Entradas vendidas para El Lago de los Cisnes" aria-valuenow="120"
+                                    aria-valuemin="0" aria-valuemax="250"
+                                    aria-valuetext="120 de 250 entradas vendidas (48%)">48%</progress>
+                            </td>
+                            <td>
+                                Nivel de Aforo: Medium<br>
+                                <meter min="0" max="250" value="120" low="50" high="200" optimum="150"
+                                    aria-label="Aforo ocupado para El Lago de los Cisnes" aria-valuenow="120"
+                                    aria-valuemin="0" aria-valuemax="250"
+                                    aria-valuetext="Aforo Medio, 48% ocupado">48%</meter>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2026-11-28">28 de Noviembre, 2026</time></td>
+                            <td><em>Gala Neoclásica y Danza Boliviana Estilizada</em></td>
+                            <td>Teatro al Aire Libre Jaime Laredo</td>
+                            <td>
+                                Vendidas: 50 / 500<br>
+                                <progress value="50" max="500" role="progressbar"
+                                    aria-label="Entradas vendidas para Gala Neoclásica" aria-valuenow="50" aria-valuemin="0"
+                                    aria-valuemax="500" aria-valuetext="50 de 500 entradas vendidas (10%)">10%</progress>
+                            </td>
+                            <td>
+                                Nivel de Aforo: Low<br>
+                                <meter min="0" max="500" value="50" low="100" high="400" optimum="300"
+                                    aria-label="Aforo ocupado para Gala Neoclásica" aria-valuenow="50" aria-valuemin="0"
+                                    aria-valuemax="500" aria-valuetext="Aforo Bajo, 10% ocupado">10%</meter>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" scope="row"><strong>Total de espectadores estimados para la temporada:</strong>
+                            </td>
+                            <td colspan="2"><strong>1,150 Asistentes</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA NATIVO -->
+    <footer role="contentinfo">
+        <p><small>&copy; 2026 Ballet de la Universidad Católica Boliviana "San Pablo". Todos los derechos
+                reservados.</small></p>
+        <p><small>Desarrollado como Showcase de Maquetación Nativa HTML5 sin dependencias CSS/JS.</small></p>
+        <p><small>Fecha de última actualización del documento: <time datetime="2026-08-16">16 de Agosto de
+                    2026</time></small></p>
+    </footer>
+
+</body>
+
+</html>

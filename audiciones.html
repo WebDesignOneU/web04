@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Formulario de Inscripción para Audiciones 2026 del Ballet de la Universidad Católica Boliviana (Ballet UCB).">
+    <meta name="keywords"
+        content="Ballet, UCB, Audiciones 2026, Formulario, Inscripción, Registro, Admisión, Danza">
+    <meta name="author" content="Universidad Católica Boliviana 'San Pablo' - Departamento de Cultura">
+    <title>Audiciones & Registro - Ballet UCB</title>
+
+    <!-- FUENTES GOOGLE FONTS (CINZEL & PLUS JAKARTA SANS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- HOJA DE ESTILOS CSS3 & SCRIPT DE INTERACTIVIDAD -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ENLACE DE SALTO DIRECTO PARA NAVEGACIÓN POR TECLADO / LECTORES DE PANTALLA -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- CABECERA PRINCIPAL Y NAVEGACIÓN NATIVAS -->
+    <header role="banner" class="animate-header">
+        <div class="header-top">
+            <div class="header-titles">
+                <h1>Ballet de la Universidad Católica Boliviana "San Pablo"</h1>
+                <p><small>Compromiso, Técnica y Expresión Artística Universitaria | La Paz - Bolivia</small></p>
+            </div>
+            <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Cambiar tema de color">
+                <span id="theme-icon">🌙</span> <span id="theme-text">Modo Oscuro</span>
+            </button>
+        </div>
+
+        <nav aria-label="Navegación principal del sitio">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="repertorio.html">Programación & Repertorio</a></li>
+                <li><a href="elenco.html">Elenco Artístico</a></li>
+                <li><a href="glosario.html">Glosario de Danza</a></li>
+                <li><a href="multimedia.html">Galería Multimedia</a></li>
+                <li><a href="audiciones.html" class="active" aria-current="page">Audiciones & Registro</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="main-content" role="main">
+
+        <!-- SECCIÓN 7: FORMULARIO COMPLETO DE AUDICIONES E INSCRIPCIONES (INPUTS HTML5) -->
+        <section id="audiciones" aria-labelledby="audiciones-heading">
+            <h2 id="audiciones-heading">Formulario de Inscripción para Audiciones 2026</h2>
+            <p>Los estudiantes interesados en unirse al Ballet UCB deben completar el siguiente formulario de admisión
+                nativo:</p>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <!-- BLOQUE 1: DATOS PERSONALES -->
+                <fieldset>
+                    <legend><strong>1. Datos Personales del Postulante</strong></legend>
+
+                    <p>
+                        <label for="nombre">Nombre Completo (*):</label><br>
+                        <input type="text" id="nombre" name="nombre" required aria-required="true"
+                            placeholder="Ej. Ana María Pérez" minlength="3" maxlength="60">
+                    </p>
+
+                    <p>
+                        <label for="ci">Carnet de Identidad (C.I.) / Pasaporte (*):</label><br>
+                        <input type="text" id="ci" name="ci" required aria-required="true" aria-describedby="ci-help"
+                            pattern="[0-9]{7,10}-[A-Z]{2}|[0-9]{7,10}" placeholder="Ej. 8492012-LP"><br>
+                        <small id="ci-help">Formato: 7 a 10 dígitos opcionalmente seguidos de guion y 2 letras (ej.
+                            8492012-LP)</small>
+                    </p>
+
+                    <p>
+                        <label for="email">Correo Institucional / Personal (*):</label><br>
+                        <input type="email" id="email" name="email" required aria-required="true"
+                            placeholder="estudiante@ucb.edu.bo">
+                    </p>
+
+                    <p>
+                        <label for="telefono">Número de Teléfono / WhatsApp (*):</label><br>
+                        <input type="tel" id="telefono" name="telefono" required aria-required="true"
+                            aria-describedby="telefono-help" placeholder="+591 70000000"
+                            pattern="(\+591|591)?[67][0-9]{7}"><br>
+                        <small id="telefono-help">Formato: número celular boliviano de 8 dígitos (ej. +591
+                            70000000)</small>
+                    </p>
+
+                    <p>
+                        <label for="nacimiento" id="nacimiento-label">Fecha de Nacimiento:</label><br>
+                        <input type="date" id="nacimiento" name="nacimiento" min="1995-01-01" max="2010-12-31"
+                            aria-label="Fecha de Nacimiento" aria-labelledby="nacimiento-label">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- BLOQUE 2: INFORMACIÓN ACADÉMICA Y TÉCNICA -->
+                <fieldset>
+                    <legend><strong>2. Información Académica y Experiencia en Danza</strong></legend>
+
+                    <p>
+                        <label for="carrera">Carrera Universitaria en UCB:</label><br>
+                        <input type="text" id="carrera" name="carrera" list="carreras-list"
+                            aria-describedby="carrera-help" placeholder="Busca o escribe tu carrera"><br>
+                        <small id="carrera-help">Seleccione una carrera de la lista desplegable o escriba el
+                            nombre.</small>
+                        <datalist id="carreras-list">
+                            <option value="Administración de Empresas">
+                            <option value="Arquitectura">
+                            <option value="Comunicación Social">
+                            <option value="Derecho">
+                            <option value="Diseño Gráfico">
+                            <option value="Ingeniería Civil">
+                            <option value="Ingeniería Industrial">
+                            <option value="Ingeniería de Sistemas">
+                            <option value="Medicina">
+                            <option value="Psicología">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="semestre">Semestre Actual:</label><br>
+                        <input type="number" id="semestre" name="semestre" min="1" max="10" value="1">
+                    </p>
+
+                    <p>
+                        <label for="nivel">Nivel de Experiencia en Ballet Clásico (*):</label><br>
+                        <select id="nivel" name="nivel" required aria-required="true">
+                            <option value="" disabled selected>-- Seleccione su nivel --</option>
+                            <optgroup label="Sin Experiencia Previa">
+                                <option value="principiante-cero">Principiante (Sin conocimientos previos)</option>
+                            </optgroup>
+                            <optgroup label="Con Experiencia Previa">
+                                <option value="elemental">Elemental (1 a 2 años de formación)</option>
+                                <option value="intermedio">Intermedio (3 a 5 años de formación)</option>
+                                <option value="avanzado">Avanzado / Profesional (Más de 5 años)</option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="flexibilidad" id="flexibilidad-label">Autoevaluación de Condición Física y
+                            Flexibilidad (1 al 10):</label><br>
+                        1 <input type="range" id="flexibilidad" name="flexibilidad" min="1" max="10" value="5"
+                            aria-labelledby="flexibilidad-label"
+                            aria-label="Autoevaluación de Condición Física y Flexibilidad" aria-valuemin="1"
+                            aria-valuemax="10" aria-valuenow="5" aria-valuetext="5 de 10"> 10
+                    </p>
+
+                    <fieldset>
+                        <legend><strong>Preferencia de Horario para Ensayos:</strong></legend>
+                        <p>
+                            <input type="radio" id="horario-manana" name="horario" value="manana">
+                            <label for="horario-manana">Mañana (07:30 - 09:30)</label><br>
+
+                            <input type="radio" id="horario-tarde" name="horario" value="tarde">
+                            <label for="horario-tarde">Tarde (14:30 - 16:30)</label><br>
+
+                            <input type="radio" id="horario-noche" name="horario" value="noche" checked>
+                            <label for="horario-noche">Noche (18:30 - 20:30)</label>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <label for="documentos">Adjuntar Curriculum Vitae / Certificados en Danza (PDF/ZIP):</label><br>
+                        <input type="file" id="documentos" name="documentos" accept=".pdf,.zip,.png,.jpg">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- BLOQUE 3: PREFERENCIAS Y CONFIRMACIÓN -->
+                <fieldset>
+                    <legend><strong>3. Detalles Adicionales y Compromisos</strong></legend>
+
+                    <p>
+                        <label for="color-maillot">Color Preferido de Zapatillas / Vestuario de Ensayo:</label><br>
+                        <input type="color" id="color-maillot" name="color_maillot" value="#e6b8c8"
+                            aria-label="Color Preferido de Zapatillas o Vestuario de Ensayo">
+                    </p>
+
+                    <p>
+                        <label for="comentarios">Comentarios o Antecedentes Médicos / Lesiones Previas:</label><br>
+                        <textarea id="comentarios" name="comentarios" rows="5" cols="50"
+                            placeholder="Escribe aquí cualquier observación relevante..."></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="reglamento" name="reglamento" required aria-required="true">
+                        <label for="reglamento">Acepto cumplir con el reglamento interno de asistencia y disciplina del
+                            Ballet UCB (*)</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- BOTONES DE ACCIÓN -->
+                <p>
+                    <button type="submit"><strong>Enviar Formulario de Audición</strong></button>
+                    <button type="reset">Limpiar Campos</button>
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA NATIVO -->
+    <footer role="contentinfo">
+        <p><small>&copy; 2026 Ballet de la Universidad Católica Boliviana "San Pablo". Todos los derechos
+                reservados.</small></p>
+        <p><small>Desarrollado como Showcase de Maquetación Nativa HTML5 sin dependencias CSS/JS.</small></p>
+        <p><small>Fecha de última actualización del documento: <time datetime="2026-08-16">16 de Agosto de
+                    2026</time></small></p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Galería multimedia del Ballet de la Universidad Católica Boliviana (Ballet UCB). Fotografías, audios de ensayos y trailers en video.">
+    <meta name="keywords"
+        content="Ballet, UCB, Galería, Fotos, Audios, Videos, Ensayos, Giselle, HTML5 Multimedia">
+    <meta name="author" content="Universidad Católica Boliviana 'San Pablo' - Departamento de Cultura">
+    <title>Galería Multimedia - Ballet UCB</title>
+
+    <!-- FUENTES GOOGLE FONTS (CINZEL & PLUS JAKARTA SANS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- HOJA DE ESTILOS CSS3 & SCRIPT DE INTERACTIVIDAD -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ENLACE DE SALTO DIRECTO PARA NAVEGACIÓN POR TECLADO / LECTORES DE PANTALLA -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- CABECERA PRINCIPAL Y NAVEGACIÓN NATIVAS -->
+    <header role="banner" class="animate-header">
+        <div class="header-top">
+            <div class="header-titles">
+                <h1>Ballet de la Universidad Católica Boliviana "San Pablo"</h1>
+                <p><small>Compromiso, Técnica y Expresión Artística Universitaria | La Paz - Bolivia</small></p>
+            </div>
+            <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Cambiar tema de color">
+                <span id="theme-icon">🌙</span> <span id="theme-text">Modo Oscuro</span>
+            </button>
+        </div>
+
+        <nav aria-label="Navegación principal del sitio">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="repertorio.html">Programación & Repertorio</a></li>
+                <li><a href="elenco.html">Elenco Artístico</a></li>
+                <li><a href="glosario.html">Glosario de Danza</a></li>
+                <li><a href="multimedia.html" class="active" aria-current="page">Galería Multimedia</a></li>
+                <li><a href="audiciones.html">Audiciones & Registro</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="main-content" role="main">
+
+        <!-- SECCIÓN 6: GALERÍA MULTIMEDIA NATIVAS (FIGURE, PICTURE, AUDIO, VIDEO) -->
+        <section id="multimedia" aria-labelledby="multimedia-heading">
+            <h2 id="multimedia-heading">Galería y Archivo Multimedia Nativo</h2>
+            <p>Muestra de elementos multimedia integrados utilizando etiquetas nativas HTML5:</p>
+
+            <article>
+                <h3>Fotografía de Presentación</h3>
+                <figure>
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="assets/images/elenco-grande.jpg">
+                        <source media="(min-width: 450px)" srcset="assets/images/elenco-grande.jpg">
+                        <img src="assets/images/elenco-grande.jpg"
+                            alt="Presentación del Ballet UCB en el Teatro Municipal" width="600" loading="lazy">
+                    </picture>
+                    <figcaption>Figura 1: Elenco del Ballet UCB en el saludo final de la obra "Giselle".</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>Audio de Ensayos Musicales</h3>
+                <p>Pista musical utilizada para la rutina de calentamiento en barra:</p>
+                <figure>
+                    <audio controls preload="metadata"
+                        aria-label="Pista de audio de ensayo de ballet para ejercicios de Adagio en barra" role="group">
+                        <source src="assets/audio/ensayo-ballet-ucb.mp3" type="audio/mpeg">
+                        <source src="assets/audio/ensayo-ballet-ucb.ogg" type="audio/ogg">
+                        Tu navegador no soporta la reproducción de audio nativo HTML5.
+                    </audio>
+                    <figcaption>Audio 1: Pieza de piano para ejercicios de <em>Adagio</em> en barra.</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>Video Promocional del Elenco</h3>
+                <p>Trailer resumen de la temporada pasada:</p>
+                <figure>
+                    <video controls width="560" height="315" poster="assets/images/elenco-grande.jpg" preload="metadata"
+                        aria-label="Video resumen de las actuaciones del Ballet UCB en 2025" role="group">
+                        <source src="assets/video/trailer-ballet-ucb.mp4" type="video/mp4">
+                        <source src="assets/video/trailer-ballet-ucb.webm" type="video/webm">
+                        <track kind="subtitles" src="assets/video/subtitulos-es.vtt" srclang="es" label="Español"
+                            default>
+                        Tu navegador no admite la reproducción de video nativo en HTML5.
+                    </video>
+                    <figcaption>Video 1: Resumen en video de las actuaciones del Ballet UCB en 2025.</figcaption>
+                </figure>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA NATIVO -->
+    <footer role="contentinfo">
+        <p><small>&copy; 2026 Ballet de la Universidad Católica Boliviana "San Pablo". Todos los derechos
+                reservados.</small></p>
+        <p><small>Desarrollado como Showcase de Maquetación Nativa HTML5 sin dependencias CSS/JS.</small></p>
+        <p><small>Fecha de última actualización del documento: <time datetime="2026-08-16">16 de Agosto de
+                    2026</time></small></p>
+    </footer>
+
+</body>
+
+</html>
